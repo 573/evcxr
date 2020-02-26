@@ -1,0 +1,20 @@
+name: CI using crate2nix
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  vm-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: cachix/install-nix-action@v6
+      - uses: cachix/cachix-action@v2
+        with:
+          name: 573-ci
+          signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
+        env:
+          NIX_PATH: nixpkgs=channel:nixos-unstable
+
