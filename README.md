@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/google/evcxr.svg?branch=master)](https://travis-ci.org/google/evcxr)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/google/evcxr/master?filepath=evcxr_jupyter%2Fsamples%2Fevcxr_jupyter_tour.ipynb)
+![CI using carnix](https://github.com/573/evcxr/workflows/CI%20using%20carnix/badge.svg?branch=apply-carnix)
 
 An evaluation context for Rust.
 
